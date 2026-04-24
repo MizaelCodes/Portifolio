@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./imgs/logoPNG.png">
     <title>Pagina Inicial</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -12,18 +13,27 @@
 <body>
     <header>
         <div class="navbar">
-            <h1>Ismael Chaves</h1>
+            <img src="./imgs/logoPNG.png" alt="Logo Ismael Chaves">
             <a href="#inicio">Inicio</a>
             <a href="#servicos">Serviços</a>
-            <a href="#sobre">Sobre</a>
             <a href="#diferenciais">Diferenciais</a>
+            <a href="#sobre">Sobre</a>
             <a href="#contato">Contato</a>
             <button>Falar no Whatsapp</button>
         </div>
     </header>
 
-    <section class="inicio"></section>
-    <section class="servicos">
+    <section class="inicio" id="inicio">
+        <div class="contain">
+            <h4>Soluções em TI</h4>
+            <h1>Tecnologia que Resolve.</h1>
+            <h1>Suporte que <span>você pode confiar.</span></h1>
+            <p>Suporte remoto, manutenção de hardwares e criação de websites com mais de 3 anos de experiência.</p>
+                <button class="btn">Solicitar Atendimento</button>
+                <button class="btn">Falar no WhatsApp</button>
+        </div>
+    </section>
+    <section class="servicos" id="servicos">
         <h2>Serviços</h2>
         <h3>O que posso fazer por você</h3>
         <hr>
@@ -33,16 +43,16 @@
             <div class="card"></div>
         </div>
     </section>
-    <section class="diferenciais">
-        <h2>diferenciais</h2>
+    <section class="diferenciais" id="diferenciais">
+        <h2>Diferenciais</h2>
         <h3>Porque escolher meu trabalho?</h3>
     </section>
-    <section class="sobre-mim"></section>
+    <section class="sobre-mim" id="sobre"></section>
     <section class="resultados">
-        <h2>diferenciais</h2>
+        <h2>Resultados</h2>
         <h3>Resultados que fazem a diferença</h3>
     </section>
-    <section class="contato"></section>
+    <section class="contato" id="contato"></section>
     <footer class="rodape"></footer>
 </body>
 

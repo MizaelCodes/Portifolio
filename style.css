@@ -11,13 +11,14 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     color: #f8fafc;
-    background: url(./imgs/backgroud.png);
 }
 
 header {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 10vh;
-    background: rgba(7, 14, 44, 0.2);
 }
 
 .navbar {
@@ -27,7 +28,8 @@ header {
     align-items: center;
 }
 
-.navbar h1 {
+.navbar img {
+    height: 10vh;
     cursor: pointer;
 }
 
@@ -46,8 +48,8 @@ header {
     background: #2563eb;
     color: #FFF;
     border: none;
-    border-radius: 8px;
-    padding: 12px 20px;
+    border-radius: 10px;
+    padding: 16px 25px;
     cursor: pointer;
     font-weight: 600;
     transition: 0.2s;
@@ -60,7 +62,63 @@ header {
 
 .inicio {
     width: 100%;
-    height: 90vh;
+    height: 100vh;
+    background: url(./imgs/backgroud.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: initial;
+    align-items: end;
+}
+
+.contain {
+    width: 40%;
+    height: 60vh;
+    margin: 5rem;
+}
+
+.contain h1 {
+    font-size: 36pt;
+}
+
+.contain h1 span {
+    color: #2563eb;
+}
+
+.contain .btn {
+    width: 40%;
+    height: 10%;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.contain .btn:first-of-type {
+    background: #2563eb;
+    border: 1px solid #2563eb;
+}
+
+.contain .btn {
+    background: transparent;
+    color: #FFF;
+    border: 1px solid #FFF;
+    font-size: 12.5pt;
+    transition: 0.4s;
+}
+
+.contain .btn:first-of-type:hover{
+    background: #3575ff;
+    border: 1px solid #3575ff;
+    transition: 0.4s;
+    color: rgb(255, 255, 255, 1);
+}
+
+.contain .btn:hover {
+    transition: 0.4s;
+    background: rgb(255, 255, 255, 0.2);
+    border: 1px solid rgb(255, 255, 255, 0.2);
+    color: rgb(255, 255, 255, 0.7);
 }
 
 .servicos {
@@ -69,20 +127,20 @@ header {
     background: #050E1C;
 }
 
-.servicos hr{
+.servicos hr {
     border: 1px solid #3575ff;
     width: 5%;
     margin: 1rem auto;
 }
 
-.container{
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.card{
+.card {
     width: 30%;
     height: 45vh;
     margin: 1rem;
@@ -100,6 +158,11 @@ h2 {
 h3 {
     text-align: center;
     font-size: 28pt;
+}
+
+h4 {
+    color: #2563eb;
+    text-transform: uppercase;
 }
 
 .diferenciais {
@@ -126,7 +189,7 @@ h3 {
     background: #2563eb;
 }
 
-footer{
+footer {
     width: 100%;
     height: 35vh;
     background: #000B1C;
