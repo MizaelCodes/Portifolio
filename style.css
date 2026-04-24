@@ -147,6 +147,20 @@ header {
     background: #0f172a;
     border-radius: 1rem;
     border: 2px solid #171F2F;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card p{
+    font-size: 14pt;
+    margin: 1rem;
+}
+
+.card svg{
+    color: #2563eb;
 }
 
 h2 {
@@ -163,6 +177,12 @@ h3 {
 h4 {
     color: #2563eb;
     text-transform: uppercase;
+}
+
+h5 {
+    font-size: 24pt;
+    text-transform: uppercase;
+    margin: 1rem;
 }
 
 .diferenciais {
