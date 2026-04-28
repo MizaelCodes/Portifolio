@@ -107,7 +107,7 @@ header {
     transition: 0.4s;
 }
 
-.contain .btn:first-of-type:hover{
+.contain .btn:first-of-type:hover {
     background: #3575ff;
     border: 1px solid #3575ff;
     transition: 0.4s;
@@ -127,7 +127,7 @@ header {
     background: #050E1C;
 }
 
-.servicos hr {
+hr {
     border: 1px solid #3575ff;
     width: 5%;
     margin: 1rem auto;
@@ -154,12 +154,12 @@ header {
     flex-direction: column;
 }
 
-.card p{
+.card p {
     font-size: 14pt;
     margin: 1rem;
 }
 
-.card svg{
+.card svg {
     color: #2563eb;
 }
 
@@ -203,10 +203,98 @@ h5 {
     background: #000B1C;
 }
 
+.resultados .container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+
+.resultados .contain{
+    width: 20%;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resultados .contain h5{
+    color: #2563eb;
+}
+
 .contato {
     width: 100%;
     height: 35vh;
     background: #2563eb;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contato div {
+    width: 35%;
+    text-align: justify;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contato div svg{
+    width: 100%;
+    height: auto;
+}
+
+.contato .btn:first-of-type {
+    width: 50%;
+    height: 7vh;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin: 1rem;
+    color: #FFF;
+    background: #25D366;
+
+    font-size: 12.5pt;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.contato .btn:first-of-type:hover{
+    background: #15eb64;
+    color: #FFF;
+    transition: 0.3s;
+}
+
+.contato .btn {
+    width: 50%;
+    height: 7vh;
+    border-radius: 8px;
+    border: 2px solid #FFF;
+    cursor: pointer;
+    margin: 1rem;
+    color: #FFF;
+    background: transparent;
+
+    font-size: 12.5pt;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.contato .btn:hover{
+    background: #FFF;
+    color: #3575ff;
+    transition: 0.3s;
+}
+
+.contato .btn svg {
+    width: 48px;
+    height: auto;
 }
 
 footer {
