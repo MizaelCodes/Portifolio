@@ -146,6 +146,13 @@ header {
     background: #000B1C;
 }
 
+.diferenciais .contain{
+    height: 15vh;
+    background: #0f172a;
+    border-radius: 1rem;
+    border: 2px solid #171F2F;
+}
+
 .diferenciais svg {
     color: #2563eb;
 }
