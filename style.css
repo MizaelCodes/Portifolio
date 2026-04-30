@@ -14,6 +14,8 @@ body {
     overflow-x: hidden;
 }
 
+/* ================= NAVBAR ================= */
+
 header {
     position: absolute;
     top: 0;
@@ -23,15 +25,23 @@ header {
 
 .navbar {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 10px 20px;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .navbar img {
     height: 60px;
     cursor: pointer;
+}
+
+/* LINKS DESKTOP */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .navbar a {
@@ -57,6 +67,16 @@ header {
 .navbar button:hover {
     background: #3575ff;
 }
+
+/* BOTÃO HAMBURGUER */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* ================= HERO ================= */
 
 .inicio {
     width: 100%;
@@ -105,8 +125,10 @@ header {
 }
 
 .contain .btn:last-of-type:hover {
-    background: rgb(255, 255, 255, 0.5)
+    background: rgb(255, 255, 255, 0.5);
 }
+
+/* ================= SEÇÕES ================= */
 
 .servicos,
 .diferenciais,
@@ -157,6 +179,8 @@ hr {
     margin: 1rem auto;
 }
 
+/* ================= CARDS ================= */
+
 .container {
     display: flex;
     justify-content: center;
@@ -184,6 +208,8 @@ hr {
     color: #2563eb;
 }
 
+/* ================= DIFERENCIAIS ================= */
+
 .diferenciais .contain {
     display: flex;
     flex-direction: column;
@@ -195,6 +221,8 @@ hr {
     width: 40px;
     margin: 1rem;
 }
+
+/* ================= SOBRE ================= */
 
 .sobre-mim {
     width: 100%;
@@ -225,6 +253,8 @@ hr {
     border-radius: 2rem;
 }
 
+/* ================= RESULTADOS ================= */
+
 .resultados .contain {
     flex: 1 1 200px;
     text-align: center;
@@ -238,6 +268,8 @@ hr {
 .resultados h5 {
     color: #2563eb;
 }
+
+/* ================= CONTATO ================= */
 
 .contato {
     width: 100%;
@@ -282,13 +314,15 @@ hr {
     color: #FFF;
 }
 
-.contato .btn:first-of-type:hover{
+.contato .btn:first-of-type:hover {
     background: #17ee66;
 }
 
-.contato .btn:last-of-type:hover{
+.contato .btn:last-of-type:hover {
     background: rgb(255, 255, 255, 0.6);
 }
+
+/* ================= FOOTER ================= */
 
 footer {
     width: 100%;
@@ -318,6 +352,8 @@ h6 {
     font-size: 14pt;
 }
 
+/* ================= RESPONSIVO ================= */
+
 @media (max-width: 1090px) {
     .container {
         display: flex;
@@ -325,7 +361,42 @@ h6 {
     }
 }
 
-@media (max-width: 1008px) {
+/* ================= NAVBAR MOBILE (685px) ================= */
+
+@media (max-width: 833px) {
+
+    .navbar{
+        background: #000B1C;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #000B1C;
+        padding: 20px;
+        gap: 15px;
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links button {
+        width: 100%;
+    }
+
+    .navbar {
+        justify-content: space-between;
+    }
 
     .contain {
         margin: 2rem;
@@ -333,15 +404,6 @@ h6 {
 
     .contain h1 {
         font-size: 24pt;
-    }
-
-    .navbar {
-        justify-content: center;
-        gap: 5%;
-    }
-
-    .navbar a {
-        font-size: 12px;
     }
 
     .sobre-mim {
@@ -357,14 +419,10 @@ h6 {
     }
 }
 
-@media (max-width: 850px) {
-    .navbar {
-        justify-content: center;
-        gap: 2%;
-    }
-}
+/* ================= AJUSTES MENORES ================= */
 
 @media (max-width: 575px) {
+
     .contain h4 {
         font-size: 18pt;
     }

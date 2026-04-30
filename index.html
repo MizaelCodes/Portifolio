@@ -14,12 +14,19 @@
     <header>
         <div class="navbar">
             <img src="./imgs/logoPNG.png" alt="Logo Ismael Chaves">
-            <a href="#inicio">Inicio</a>
-            <a href="#servicos">Serviços</a>
-            <a href="#diferenciais">Diferenciais</a>
-            <a href="#sobre">Sobre</a>
-            <a href="#contato">Contato</a>
-            <button>Falar no Whatsapp</button>
+
+            <div class="menu-toggle" id="menu-toggle">
+                ☰
+            </div>
+
+            <nav class="nav-links" id="nav-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#diferenciais">Diferenciais</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#contato">Contato</a>
+                <button>Falar no Whatsapp</button>
+            </nav>
         </div>
     </header>
 
@@ -214,8 +221,10 @@
             <h4>Sobre mim</h4>
             <h2>Prazer, eu sou</h2>
             <h3>Ismael Chaves</h3>
-            <p>Profissional de TI com mais de 3 anos de experiência ajudando pessoas e pequenos negócios a resolverem problemas tecnológicos de forma rápida e eficiente.</p>
-            <p>Meu objetivo é trazer soluções simples, seguras e que realmente funcionam no seu dia a dia, sempre com transparência e comprometimento.</p>
+            <p>Profissional de TI com mais de 3 anos de experiência ajudando pessoas e pequenos negócios a resolverem
+                problemas tecnológicos de forma rápida e eficiente.</p>
+            <p>Meu objetivo é trazer soluções simples, seguras e que realmente funcionam no seu dia a dia, sempre com
+                transparência e comprometimento.</p>
         </div>
     </section>
     <section class="resultados">
@@ -309,6 +318,15 @@
             <a href="https://github.com/mizaelCodes">Github</a>
         </div>
     </footer>
+
+    <script>
+        const toggle = document.getElementById('menu-toggle');
+        const nav = document.getElementById('nav-links');
+
+        toggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
 </body>
 
 </html>
