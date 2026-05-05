@@ -345,7 +345,27 @@
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script>
-        emailjs.init("SEU_PUBLIC_KEY");
+        emailjs.init("L-LwA8dlGoSRVCdo0");
+
+        const form = document.getElementById("form-orcamento");
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            emailjs.sendForm(
+                "service_nh7073x",
+                "template_fwl866l",
+                this
+            )
+                .then(() => {
+                    alert("Mensagem enviada com sucesso!");
+                    form.reset();
+                })
+                .catch((error) => {
+                    console.log(error);
+                    alert("Erro ao enviar");
+                });
+        });
     </script>
 </body>
 
